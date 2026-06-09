@@ -1,17 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascenso Webs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascenso Webs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #0f5bb5;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 50px;
+      text-align: center;
+      background: #eaf3ff;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 20px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #1a73e8;
+    }
+    footer {
+      background: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    /* Botón flotante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      margin-top: 16px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bienvenido a la pagina web de desarrollo profecional</h1>
-    <form>
-        <input type="text">
-        <input type="email">
-    </form>
-    <h2>Todos los derechos reservados Ascenso Webs</h2>
-    
+  <header>
+    <h1>Ascenso Webs</h1>
+    <p>Impulsa tu negocio con páginas web profesionales</p>
+  </header>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section class="hero">
+    <h2>Diseñamos y vendemos páginas web a tu medida</h2>
+    <p>Con Ascenso Webs tendrás presencia digital moderna, rápida y efectiva.</p>
+  </section>
+  <section id="servicios" class="services">
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>Páginas de aterrizaje optimizadas para captar clientes.</p>
+    </div>
+    <div class="card">
+      <h3>Tiendas Online</h3>
+      <p>Soluciones de e-commerce para vender tus productos.</p>
+    </div>
+    <div class="card">
+      <h3>Blogs y Portafolios</h3>
+      <p>Comparte tus ideas o muestra tu trabajo al mundo.</p>
+    </div>
+  </section>
+  <footer id="contacto">
+    <p>© 2026 Ascenso Webs - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/573001112233" class="whatsapp-float" target="_blank">
+    <i>💬</i>
+  </a>
+
+  <script>
+    // Aquí podrías añadir funciones JS adicionales si quieres animaciones o interactividad
+    console.log("Ascenso Webs listo para despegar 🚀");
+  </script>
 </body>
 </html>
