@@ -6,7 +6,7 @@
     
     <!-- SEO Meta Tags -->
     <title>Ascenso Webs | Desarrollo de Páginas Web Profesionales en Colombia</title>
-    <meta name="description" content="Ascenso Webs - Creamos páginas web profesionales en Colombia desde $800.000 COP. Landing pages, tiendas online desde $6.800.000 COP y sitios corporativos. ¡Cotiza ya!">
+    <meta name="description" content="Ascenso Webs - Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página web. Páginas desde $800.000 COP y tiendas virtuales desde $6.800.000 COP.">
     <meta name="keywords" content="desarrollo web Colombia, páginas web Bogotá, diseño web Colombia, crear página web, Ascenso Webs, tienda online Colombia, landing page Colombia">
     <meta name="author" content="Ascenso Webs">
     <meta name="robots" content="index, follow">
@@ -17,14 +17,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ascensowebs.com/">
     <meta property="og:title" content="Ascenso Webs | Desarrollo de Páginas Web Profesionales">
-    <meta property="og:description" content="Creamos tu página web profesional desde $800.000 COP y tiendas virtuales desde $6.800.000 COP. Diseños modernos, rápidos y optimizados para SEO.">
+    <meta property="og:description" content="Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página web. Diseños modernos, rápidos y optimizados para SEO.">
     <meta property="og:image" content="https://ascensowebs.com/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ascensowebs.com/">
     <meta property="twitter:title" content="Ascenso Webs | Desarrollo Web Colombia">
-    <meta property="twitter:description" content="Páginas web profesionales desde $800.000 COP y tiendas virtuales desde $6.800.000 COP. Cotiza gratis.">
+    <meta property="twitter:description" content="Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página web.">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://ascensowebs.com/">
@@ -56,7 +56,7 @@
 
     <style>
         /* =========================================================
-           SISTEMA DE COLOR OKLCH & TOKENS DE DISEÑO AVANZADO
+           PALETA PERCEPTUAL OKLCH & TOKENS DE DISEÑO AVANZADO
            ========================================================= */
         :root {
             --primary-color: oklch(54% 0.22 260);
@@ -64,6 +64,7 @@
             --accent-color: oklch(62% 0.19 252);
             --violet-accent: oklch(52% 0.22 292);
             --emerald-ok: oklch(64% 0.17 156);
+            --gold-highlight: oklch(78% 0.16 82);
             --whatsapp-green: oklch(68% 0.19 148);
             --whatsapp-dark: oklch(53% 0.16 155);
 
@@ -82,7 +83,7 @@
             --tint-emerald: color-mix(in oklch, var(--emerald-ok) 14%, transparent);
 
             --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--violet-accent) 100%);
-            --gradient-dark: linear-gradient(145deg, oklch(15% 0.03 262) 0%, oklch(22% 0.05 268) 60%, oklch(26% 0.09 282) 100%);
+            --gradient-dark: linear-gradient(145deg, oklch(14% 0.03 262) 0%, oklch(21% 0.05 268) 60%, oklch(26% 0.09 282) 100%);
 
             --shadow:
                 0 2px 6px color-mix(in oklch, var(--text-dark) 5%, transparent),
@@ -213,17 +214,16 @@
         }
 
         /* =========================================================
-           HERO SECTION
+           HERO SECTION CON TARJETA VISUAL DESTACADA
            ========================================================= */
         .hero {
             margin-top: 68px;
-            padding: clamp(4.2rem, 8vw, 6.5rem) clamp(1.25rem, 3vw, 2rem);
+            padding: clamp(3.5rem, 7vw, 5.75rem) clamp(1.25rem, 3vw, 2rem);
             background:
-                radial-gradient(circle at 20% 20%, color-mix(in oklch, var(--accent-color) 40%, transparent), transparent 48%),
-                radial-gradient(circle at 85% 80%, color-mix(in oklch, var(--violet-accent) 45%, transparent), transparent 50%),
+                radial-gradient(circle at 18% 18%, color-mix(in oklch, var(--accent-color) 42%, transparent), transparent 48%),
+                radial-gradient(circle at 86% 80%, color-mix(in oklch, var(--violet-accent) 46%, transparent), transparent 50%),
                 var(--gradient-dark);
             color: var(--white);
-            text-align: center;
             position: relative;
             overflow: hidden;
         }
@@ -236,44 +236,52 @@
                 linear-gradient(to right, oklch(100% 0 0 / 0.06) 1px, transparent 1px),
                 linear-gradient(to bottom, oklch(100% 0 0 / 0.06) 1px, transparent 1px);
             background-size: 36px 36px;
-            mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+            mask-image: radial-gradient(circle at center, black 42%, transparent 86%);
+        }
+
+        .hero-layout {
+            position: relative;
+            z-index: 1;
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+            gap: clamp(1.75rem, 3.5vw, 3rem);
+            align-items: center;
         }
 
         .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 820px;
-            margin: 0 auto;
+            text-align: left;
         }
 
         .hero-badge {
             display: inline-block;
             padding: 6px 16px;
             border-radius: 999px;
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 700;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.07em;
             text-transform: uppercase;
             background: oklch(100% 0 0 / 0.1);
-            border: 1px solid oklch(100% 0 0 / 0.2);
+            border: 1px solid oklch(100% 0 0 / 0.22);
             color: oklch(94% 0.03 255);
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.15rem;
             animation: fadeInUp 0.8s ease;
         }
 
         .hero h1 {
-            font-size: clamp(2.1rem, 5vw, 3.6rem);
+            font-size: clamp(2.05rem, 4.4vw, 3.35rem);
             font-weight: 850;
             letter-spacing: -0.03em;
             line-height: 1.12;
-            margin-bottom: 1.15rem;
+            margin-bottom: 1rem;
             text-wrap: balance;
             animation: fadeInUp 0.9s ease;
         }
 
         .hero p {
-            font-size: clamp(1rem, 2vw, 1.24rem);
-            margin-bottom: 2.1rem;
+            font-size: clamp(1rem, 1.6vw, 1.18rem);
+            margin-bottom: 1.85rem;
             color: oklch(90% 0.02 258);
             line-height: 1.6;
             animation: fadeInUp 1s ease 0.15s both;
@@ -283,13 +291,13 @@
             display: inline-flex;
             align-items: center;
             gap: 0.6rem;
-            padding: 1rem 2.4rem;
+            padding: 0.98rem 2.25rem;
             background: var(--white);
             color: var(--secondary-color);
             text-decoration: none;
             border-radius: 999px;
             font-weight: 800;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             transition: transform 0.25s ease, box-shadow 0.25s ease;
             box-shadow: 0 10px 28px oklch(10% 0.04 260 / 0.35);
             animation: fadeInUp 1s ease 0.3s both;
@@ -298,6 +306,58 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 14px 34px oklch(10% 0.04 260 / 0.48);
+        }
+
+        /* Cuadro de Foto Principal con Mensaje de Pago Único */
+        .hero-visual-box {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1.5px solid oklch(100% 0 0 / 0.22);
+            background: oklch(18% 0.03 262);
+            box-shadow: 0 24px 60px -15px oklch(8% 0.04 262 / 0.65);
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-visual-box img {
+            width: 100%;
+            height: clamp(290px, 38vw, 410px);
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-photo-overlay {
+            position: relative;
+            padding: 1.25rem 1.4rem;
+            background: linear-gradient(
+                135deg,
+                color-mix(in oklch, var(--primary-color) 88%, oklch(14% 0.03 262)) 0%,
+                color-mix(in oklch, var(--violet-accent) 85%, oklch(14% 0.03 262)) 100%
+            );
+            border-top: 1px solid oklch(100% 0 0 / 0.18);
+            text-align: left;
+        }
+
+        .hero-ownership-pill {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold-highlight);
+            background: oklch(100% 0 0 / 0.12);
+            border: 1px solid color-mix(in oklch, var(--gold-highlight) 45%, transparent);
+            padding: 3px 10px;
+            border-radius: 999px;
+            margin-bottom: 0.45rem;
+        }
+
+        .hero-photo-caption {
+            font-size: clamp(1rem, 1.65vw, 1.22rem);
+            font-weight: 800;
+            line-height: 1.35;
+            color: var(--white);
+            letter-spacing: -0.015em;
         }
 
         /* =========================================================
@@ -485,24 +545,15 @@
         }
 
         .portfolio-price-box {
-            padding: 0.75rem 1rem;
+            padding: 0.8rem 1rem;
             border-radius: var(--radius-sm);
             background: var(--bg-subtle);
             border: 1px solid var(--border-soft);
             margin-bottom: 1rem;
         }
 
-        .portfolio-price-label {
-            display: block;
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-light);
-        }
-
         .portfolio-price {
-            font-size: 1.42rem;
+            font-size: 1.45rem;
             font-weight: 850;
             font-variant-numeric: tabular-nums;
             color: var(--primary-color);
@@ -594,20 +645,10 @@
 
         .plan-price-wrap {
             margin: 1.1rem 0;
-            padding: 0.9rem 0.75rem;
+            padding: 0.95rem 0.75rem;
             border-radius: var(--radius-md);
             background: var(--bg-subtle);
             border: 1px solid var(--border-soft);
-        }
-
-        .plan-price-prefix {
-            display: block;
-            font-size: 0.72rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-light);
-            margin-bottom: 2px;
         }
 
         .plan-price {
@@ -807,6 +848,16 @@
             transform: translateY(0);
         }
 
+        @media (max-width: 920px) {
+            .hero-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -866,14 +917,26 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-content">
-            <span class="hero-badge">Desarrollo Web & E-Commerce en Colombia</span>
-            <h1>Impulsa tu Negocio al Siguiente Nivel</h1>
-            <p>Desarrollamos páginas web profesionales, modernas y optimizadas para SEO desde $800.000 COP, y tiendas virtuales completas desde $6.800.000 COP. ¡Tu éxito digital comienza aquí!</p>
-            <a href="https://wa.me/573228466235?text=Hola%20Ascenso%20Webs,%20quiero%20cotizar%20un%20proyecto%20web" class="cta-button" target="_blank" rel="noopener">
-                <span>Cotizar Ahora</span>
-                <span>💬</span>
-            </a>
+        <div class="hero-layout">
+            <div class="hero-content">
+                <span class="hero-badge">Desarrollo Web & E-Commerce en Colombia</span>
+                <h1>Impulsa tu Negocio al Siguiente Nivel</h1>
+                <p>Desarrollamos páginas web profesionales y tiendas virtuales a medida. Páginas desde $800.000 COP y tiendas virtuales desde $6.800.000 COP.</p>
+                <a href="https://wa.me/573228466235?text=Hola%20Ascenso%20Webs,%20quiero%20cotizar%20un%20proyecto%20web" class="cta-button" target="_blank" rel="noopener">
+                    <span>Cotizar Ahora</span>
+                    <span>💬</span>
+                </a>
+            </div>
+
+            <div class="hero-visual-box">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop" alt="Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página web">
+                <div class="hero-photo-overlay">
+                    <span class="hero-ownership-pill">Propiedad Total</span>
+                    <div class="hero-photo-caption">
+                        Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -916,7 +979,7 @@
             <div class="section-header fade-in">
                 <span class="section-eyebrow">Soluciones & Ejemplos</span>
                 <h2 class="section-title">Ejemplos de Proyectos</h2>
-                <p class="section-subtitle">Conoce nuestras líneas de desarrollo y sus rangos de inversión.</p>
+                <p class="section-subtitle">Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página.</p>
             </div>
             <div class="portfolio-grid">
                 <!-- Landing Page -->
@@ -929,7 +992,6 @@
                         <h3>Landing Page Profesional</h3>
                         <p>Página de aterrizaje optimizada para conversiones, ideal para campañas de marketing y captación de clientes.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Inversión inicial</span>
                             <div class="portfolio-price">Desde $800.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20la%20Landing%20Page%20de%20$800.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -949,7 +1011,6 @@
                         <h3>Página Web Corporativa</h3>
                         <p>Sitio web completo para empresas con múltiples secciones, blog y formulario de contacto.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Inversión inicial</span>
                             <div class="portfolio-price">Desde $1.500.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20la%20Página%20Web%20Corporativa%20de%20$1.500.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -969,7 +1030,6 @@
                         <h3>Tienda Online Avanzado</h3>
                         <p>Optimización y mejoras avanzadas de catálogo, experiencia móvil, logística de envíos y flujo de compras.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Valor del servicio</span>
                             <div class="portfolio-price">$1.800.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20la%20Tienda%20Online%20Avanzado%20por%20$1.800.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -989,7 +1049,6 @@
                         <h3>Tienda Virtual / E-commerce</h3>
                         <p>Tienda virtual completa desde cero con pasarela de pagos, carrito de compras, gestión de inventario y panel administrativo.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Precio mínimo</span>
                             <div class="portfolio-price">Desde $6.800.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20la%20Tienda%20Virtual%20desde%20$6.800.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -1009,7 +1068,6 @@
                         <h3>Portal Web Avanzado</h3>
                         <p>Sistema web complejo con base de datos, usuarios, panel administrativo y funcionalidades personalizadas.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Inversión inicial</span>
                             <div class="portfolio-price">Desde $4.000.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20el%20Portal%20Web%20Avanzado%20de%20$4.000.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -1029,7 +1087,6 @@
                         <h3>Web para Restaurantes</h3>
                         <p>Sitio web con menú digital, reservas en línea, galería e integración con redes sociales.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Inversión inicial</span>
                             <div class="portfolio-price">Desde $1.200.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20la%20Web%20para%20Restaurantes%20de%20$1.200.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -1049,7 +1106,6 @@
                         <h3>Web Inmobiliaria</h3>
                         <p>Portal de propiedades con buscador avanzado, filtros, mapa interactivo y CRM integrado.</p>
                         <div class="portfolio-price-box">
-                            <span class="portfolio-price-label">Inversión inicial</span>
                             <div class="portfolio-price">Desde $3.000.000 COP</div>
                         </div>
                         <a href="https://wa.me/573228466235?text=Hola,%20me%20interesa%20la%20Web%20Inmobiliaria%20de%20$3.000.000" class="whatsapp-btn" target="_blank" rel="noopener">
@@ -1068,7 +1124,7 @@
             <div class="section-header fade-in">
                 <span class="section-eyebrow">Planes Transparentes</span>
                 <h2 class="section-title">Nuestros Paquetes</h2>
-                <p class="section-subtitle">Elige la solución exacta para la etapa actual de tu empresa o comercio electrónico.</p>
+                <p class="section-subtitle">Pagas una sola vez y eres dueño de por vida de tu tienda virtual o de tu página.</p>
             </div>
             <div class="pricing-grid">
                 <!-- Plan Básico -->
@@ -1077,7 +1133,6 @@
                         <span class="plan-tier">Inicio Rápido</span>
                         <h3 class="plan-name">Landing Page</h3>
                         <div class="plan-price-wrap">
-                            <span class="plan-price-prefix">Desde</span>
                             <div class="plan-price">$800.000<span>COP</span></div>
                         </div>
                         <ul class="plan-features">
@@ -1102,7 +1157,6 @@
                         <span class="plan-tier">Empresarial</span>
                         <h3 class="plan-name">Web Corporativa</h3>
                         <div class="plan-price-wrap">
-                            <span class="plan-price-prefix">Desde</span>
                             <div class="plan-price">$1.500.000<span>COP</span></div>
                         </div>
                         <ul class="plan-features">
@@ -1128,7 +1182,6 @@
                         <span class="plan-tier">Optimización</span>
                         <h3 class="plan-name">Tienda Online Avanzado</h3>
                         <div class="plan-price-wrap">
-                            <span class="plan-price-prefix">Inversión</span>
                             <div class="plan-price">$1.800.000<span>COP</span></div>
                         </div>
                         <ul class="plan-features">
@@ -1152,8 +1205,7 @@
                         <span class="plan-tier">E-Commerce Full</span>
                         <h3 class="plan-name">Tienda Virtual</h3>
                         <div class="plan-price-wrap">
-                            <span class="plan-price-prefix">Precio mínimo</span>
-                            <div class="plan-price">$6.800.000<span>COP</span></div>
+                            <div class="plan-price">Desde $6.800.000<span>COP</span></div>
                         </div>
                         <ul class="plan-features">
                             <li>Tienda virtual completa a medida</li>
@@ -1177,7 +1229,6 @@
                         <span class="plan-tier">Sistemas Web</span>
                         <h3 class="plan-name">Portal Avanzado</h3>
                         <div class="plan-price-wrap">
-                            <span class="plan-price-prefix">Desde</span>
                             <div class="plan-price">$4.000.000+<span>COP</span></div>
                         </div>
                         <ul class="plan-features">
@@ -1254,7 +1305,6 @@
             }
         });
 
-        // Activar animaciones de aparición al hacer scroll
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
